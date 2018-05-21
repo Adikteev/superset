@@ -1,7 +1,7 @@
-FROM debian:stretch
+FROM debian:buster
 
 # Superset version
-ARG SUPERSET_VERSION=0.25.2
+ARG SUPERSET_VERSION=0.25.5
 
 # Configure environment
 ENV LANG=C.UTF-8 \
@@ -43,7 +43,7 @@ RUN useradd -U -m superset && \
         mysqlclient==1.3.7 \
         psycopg2==2.6.1 \
         pyathenajdbc==1.2.0 \
-        pyhive==0.5.0 \
+        pyhive==0.5.1 \
         pyldap==2.4.28 \
         redis==2.10.5 \
         sqlalchemy-redshift==0.5.0 \
