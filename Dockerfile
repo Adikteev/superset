@@ -1,7 +1,7 @@
 FROM debian:buster
 
 # Superset version
-ARG SUPERSET_VERSION=0.25.6
+ARG SUPERSET_VERSION=0.26.3
 
 # Configure environment
 ENV LANG=C.UTF-8 \
@@ -46,6 +46,7 @@ RUN useradd -U -m superset && \
         pyhive==0.5.1 \
         pyldap==2.4.28 \
         redis==2.10.5 \
+        sqlalchemy==1.2.2 \
         sqlalchemy-redshift==0.5.0 \
         sqlalchemy-clickhouse==0.1.1.post3 \
         sqlalchemy-utils==0.32.21 \
